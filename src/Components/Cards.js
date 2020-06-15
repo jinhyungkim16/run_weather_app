@@ -1,19 +1,19 @@
 import React from 'react';
-import {Card, Button} from 'react-bootstrap';
+import {Button} from 'react-bootstrap';
+import Jumbotron from 'react-bootstrap/Jumbotron';
+
 
 function Cards() {
   return (
-    <Card style={{ width: '18rem' }}>
-    <Card.Img variant="top" src="" />
-    <Card.Body>
-      <Card.Title>Card Title</Card.Title>
-      <Card.Text>
-        Some quick example text to build on the card title and make up the bulk of
-        the card's content.
-      </Card.Text>
-      <Button variant="primary">Go somewhere</Button>
-    </Card.Body>
-  </Card>
+      <Jumbotron>
+         <h1>Can I Go Run?</h1>
+            <p>
+              This app will output if it is okay to run outside based on the user's custom weather preferences
+            </p>
+            <p>
+              <Button variant="primary" href="https://github.com/jinhyungkim16/run_weather_app" target="_blank">GitHub Code</Button>
+            </p>
+      </Jumbotron>
   );
 }
 

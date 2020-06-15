@@ -1,30 +1,33 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Alert} from "react-bootstrap";
+import {Alert, Form} from "react-bootstrap";
 import Cards from './Components/Cards'
+import Forms from './Components/Forms'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Alert variant="danger"></Alert>
+        {/* <Alert variant="danger"></Alert> */}
         
         <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
         <Cards></Cards>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        </p>
+        <Forms></Forms>
       </header>
     </div>
   );
 }
+
+// function getWeatherAPI() {
+//   return fetch (
+//     "http://api.openweathermap.org/data/2.5/weather?zip=78705,us&appid=44c09e1b007fddbe29f4d406bc2efec3"
+//   )
+// };
+
+// getWeatherAPI.then((data) => {
+//   console.log(data)
+// });
 
 export default App;
